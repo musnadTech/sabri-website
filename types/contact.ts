@@ -9,11 +9,18 @@ export interface ContactInfo {
   title: string
   subtitle: string
   email: string
+  phone: string
+  phoneUrl: string
   location: string
   githubUrl: string
   githubDisplay: string
   linkedinUrl: string
   linkedinDisplay: string
+  facebookUrl: string
+  facebookDisplay: string
+  instagramUrl: string
+  instagramDisplay: string
+  whatsappUrl: string
+  whatsappDisplay: string
   socialLinks: SocialLink[]
 }
-
