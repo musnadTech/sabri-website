@@ -17,7 +17,7 @@ export function Hero() {
       <Container>
         {/* Mobile Avatar View */}
         <div className="flex flex-col items-center text-center md:hidden mb-8">
-          <div className="relative mb-6 flex h-48 w-48 items-center justify-center rounded-full bg-gradient-to-b from-muted/60 to-muted/20 p-2 ring-1 ring-border/80 shadow-md">
+          <div className="relative mb-6 flex h-48 w-48 items-center justify-center rounded-full bg-linear-to-b from-muted/60 to-muted/20 p-2 ring-1 ring-border/80 shadow-md">
             <div className="relative h-full w-full overflow-hidden rounded-full bg-muted/40">
               <Image
                 src={heroData.image}
@@ -91,7 +91,7 @@ export function Hero() {
         </div>
 
         {/* Desktop Hero View */}
-        <div className="hidden md:grid md:grid-cols-12 md:items-center gap-8 lg:gap-12 min-h-[460px]">
+        <div className="hidden md:grid md:grid-cols-12 md:items-center gap-8 lg:gap-12 min-h-115">
           {/* Left Content */}
           <div className="md:col-span-7 lg:col-span-6 flex flex-col items-start text-left">
             <h1 className="flex flex-col items-start">
@@ -158,7 +158,7 @@ export function Hero() {
 
           {/* Right Illustration */}
           <div className="md:col-span-5 lg:col-span-6 relative flex items-center justify-center lg:justify-end">
-            <div className="relative w-full max-w-[440px] lg:max-w-[500px] xl:max-w-[540px] aspect-square">
+            <div className="relative w-full max-w-110 lg:max-w-125 xl:max-w-135 aspect-square">
               <Image
                 src={heroData.image}
                 alt="Sabri Alshibani - Developer Illustration"

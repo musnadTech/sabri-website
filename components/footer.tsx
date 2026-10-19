@@ -42,7 +42,7 @@ export function Footer() {
 
 
         {/* Links */}
-        <nav className="flex items-center gap-4 sm:gap-6 text-xs text-muted-foreground">
+        <nav className="flex items-center flex-wrap gap-4 sm:gap-6 text-xs text-muted-foreground">
           {footerLinks.map((link) => (
             <a
               key={link.href}
