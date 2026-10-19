@@ -1,4 +1,4 @@
-export type TechCategory = "frontend" | "backend" | "database" | "mobile" | "tools"
+export type TechCategory = "frontend" | "backend" | "database" | "mobile" | "tools" | "desktop"
 
 export interface TechItem {
   name: string

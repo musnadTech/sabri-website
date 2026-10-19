@@ -116,5 +116,11 @@ export const techStack: TechItem[] = [
     category: "database",
     image: "/techs/sqlite.svg",
   },
+    {
+    name: "ElectronJs",
+    label: "ElectronJs",
+    category: "desktop",
+    image: "/techs/electron-js.svg",
+  },
 ]
 
