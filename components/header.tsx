@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="/" className="inline-block transition-opacity hover:opacity-90">
           <Image
             src="/logo-light.png"
-            alt="Website Logo"
+            alt="Sabri Alshibani Logo"
             width={110}
             height={36}
             className="h-7 w-auto sm:h-9 dark:hidden object-contain"
@@ -41,7 +41,7 @@ export default function Header() {
           />
           <Image
             src="/logo-dark.png"
-            alt="Website Logo"
+            alt="Sabri Alshibani Logo"
             width={110}
             height={36}
             className="hidden dark:block h-7 w-auto sm:h-9 object-contain"
@@ -86,14 +86,14 @@ export default function Header() {
                   >
                     <Image
                       src="/logo-light.png"
-                      alt="Website Logo"
+                      alt="Sabri Alshibani Logo"
                       width={100}
                       height={32}
                       className="h-7 w-auto dark:hidden object-contain"
                     />
                     <Image
                       src="/logo-dark.png"
-                      alt="Website Logo"
+                      alt="Sabri Alshibani Logo"
                       width={100}
                       height={32}
                       className="hidden dark:block h-7 w-auto object-contain"

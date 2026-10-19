@@ -122,3 +122,4 @@ export function Articles({ data = defaultArticlesData }: ArticlesProps) {
     </section>
   )
 }
+

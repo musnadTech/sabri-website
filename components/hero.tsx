@@ -21,7 +21,7 @@ export function Hero() {
             <div className="relative h-full w-full overflow-hidden rounded-full bg-muted/40">
               <Image
                 src={heroData.image}
-                alt="Developer Portrait"
+                alt="Sabri Alshibani - Full-Stack Developer Portrait"
                 fill
                 className="object-cover object-top grayscale"
                 priority
@@ -29,11 +29,13 @@ export function Hero() {
             </div>
           </div>
 
-          <span className="text-base sm:text-lg font-medium text-muted-foreground mb-1.5 block">
-            {heroData.greeting} <span className="font-bold text-foreground">{heroData.name}</span>
-          </span>
-          <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-            {heroData.role}
+          <h1 className="flex flex-col items-center">
+            <span className="text-base sm:text-lg font-medium text-muted-foreground mb-1.5 block">
+              {heroData.greeting} <span className="font-bold text-foreground">{heroData.name}</span>
+            </span>
+            <span className="text-3xl font-extrabold tracking-tight sm:text-4xl block text-foreground">
+              {heroData.role}
+            </span>
           </h1>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground">
             {heroData.description}
@@ -92,11 +94,13 @@ export function Hero() {
         <div className="hidden md:grid md:grid-cols-12 md:items-center gap-8 lg:gap-12 min-h-[460px]">
           {/* Left Content */}
           <div className="md:col-span-7 lg:col-span-6 flex flex-col items-start text-left">
-            <span className="text-base sm:text-lg lg:text-xl font-medium text-muted-foreground tracking-wide mb-2 block">
-              {heroData.greeting} <span className="font-bold text-foreground">{heroData.name}</span>
-            </span>
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1]">
-              {heroData.role}
+            <h1 className="flex flex-col items-start">
+              <span className="text-base sm:text-lg lg:text-xl font-medium text-muted-foreground tracking-wide mb-2 block">
+                {heroData.greeting} <span className="font-bold text-foreground">{heroData.name}</span>
+              </span>
+              <span className="text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-foreground leading-[1.1] block">
+                {heroData.role}
+              </span>
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground leading-relaxed">
               {heroData.description}
@@ -152,12 +156,12 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right Illustration */}
+          {/* Right Illustration */}lg:max-w-125
           <div className="md:col-span-5 lg:col-span-6 relative flex items-center justify-center lg:justify-end">
-            <div className="relative w-full max-w-[440px] lg:max-w-[500px] xl:max-w-[540px] aspect-square">
+            <div className="relative w-full max-w-110 lg:max-w-125 xl:max-w-135 aspect-square">
               <Image
                 src={heroData.image}
-                alt="Developer Illustration"
+                alt="Sabri Alshibani - Developer Illustration"
                 fill
                 className="object-contain grayscale select-none pointer-events-none"
                 priority

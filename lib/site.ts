@@ -1,0 +1,45 @@
+export const siteConfig = {
+  name: "Sabri Alshibani",
+  title: "Sabri Alshibani | Full-Stack Developer",
+  description:
+    "I build modern web and mobile applications with clean code, scalable architecture, and great user experiences. Passionate about turning ideas into real products.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://sabrialshibani.com",
+  ogImage: "/personal-image.png",
+  author: {
+    name: "Sabri Alshibani",
+    role: "Full-Stack Developer",
+    email: "sabri.developer2@gmail.com",
+    phone: "+967 730235491",
+    location: "Yemen",
+    github: "https://github.com/sabriAlshibani",
+    linkedin: "https://www.linkedin.com/in/sabri-m-alshibani-46318a287",
+    facebook: "https://www.facebook.com/sabri.mohammad.alshibani",
+    instagram: "https://www.instagram.com/usa_6s",
+    whatsapp: "https://wa.me/967730235491",
+  },
+  keywords: [
+    "Sabri Alshibani",
+    "Sabri Al-Shibani",
+    "Full-Stack Developer",
+    "Software Engineer",
+    "Web Developer",
+    "Next.js Developer",
+    "React Developer",
+    "TypeScript Developer",
+    "JavaScript Developer",
+    "Node.js Developer",
+    "Tailwind CSS",
+    "Mobile App Developer",
+    "Flutter Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Software Architecture",
+    "Clean Code",
+    "Yemen Developer",
+    "Portfolio",
+    "Web Applications",
+  ],
+}
+
+export type SiteConfig = typeof siteConfig
+

@@ -14,7 +14,7 @@ export const aboutData: AboutData = {
   ],
   workspaceImage: {
     src: "/workspace.jpeg",
-    alt: "Workspace desk setup with laptop, notebook and coffee",
+    alt: "Sabri Alshibani workspace desk setup with laptop, notebook and coffee",
   },
   education: {
     period: "2024 — Present",

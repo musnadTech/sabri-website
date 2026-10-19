@@ -16,3 +16,4 @@ export interface ArticlesData {
   viewAllLink: string
   articles: Article[]
 }
+
