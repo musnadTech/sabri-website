@@ -129,8 +129,8 @@ export default function Header() {
                   ))}
                 </nav>
 
-                <div className="border-t pt-4 text-xs text-muted-foreground">
-                  © 2025 All rights reserved.
+                <div className="border-t pt-4 text-xs text-muted-foreground" suppressHydrationWarning>
+                  © {new Date().getFullYear()} All rights reserved.
                 </div>
               </SheetContent>
             </Sheet>
