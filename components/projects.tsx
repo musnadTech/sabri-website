@@ -60,12 +60,12 @@ export function Projects({ projects = defaultProjects }: ProjectsProps) {
     <section id="projects" className="scroll-mt-24">
       <Container>
         {/* Header */}
-        <div className="flex items-end justify-between gap-4 mb-8">
+        <div className="flex items-end justify-between gap-3 mb-6 sm:mb-8">
           <div>
             <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground block mb-1">
               Projects
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
               Selected Projects
             </h2>
           </div>
@@ -74,9 +74,10 @@ export function Projects({ projects = defaultProjects }: ProjectsProps) {
             href={contactData.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="text-xs sm:text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 group"
+            className="text-xs sm:text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1 sm:gap-1.5 shrink-0 whitespace-nowrap pb-0.5 group"
           >
-            View All Projects
+            <span className="sm:hidden">View all</span>
+            <span className="hidden sm:inline">View All Projects</span>
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
           </a>
         </div>
