@@ -3,14 +3,14 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Container } from "./container";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetHeader,
+  SheetClose,
   SheetTitle,
   SheetDescription,
   SheetTrigger,
@@ -71,14 +71,50 @@ export default function Header() {
                   </Button>
                 }
               />
-              <SheetContent side="right" className="flex flex-col w-75 sm:w-87.5 p-6">
-                <SheetHeader className="text-left pb-4 border-b">
-                  <SheetTitle className="text-lg font-semibold tracking-tight">Navigation</SheetTitle>
-                  {/* Visually hidden description for screen readers */}
-                  <SheetDescription className="sr-only">
-                    Mobile site navigation links
-                  </SheetDescription>
-                </SheetHeader>
+              <SheetContent side="right" showCloseButton={false} className="flex flex-col w-75 sm:w-87.5 p-6">
+                {/* Drawer Header: Logo on left, Close button on right */}
+                <div className="flex items-center justify-between pb-4 border-b">
+                  <Link
+                    href="/"
+                    onClick={() => setOpen(false)}
+                    className="inline-block transition-opacity hover:opacity-90"
+                  >
+                    <Image
+                      src="/logo-light.png"
+                      alt="Website Logo"
+                      width={100}
+                      height={32}
+                      className="h-7 w-auto dark:hidden object-contain"
+                    />
+                    <Image
+                      src="/logo-dark.png"
+                      alt="Website Logo"
+                      width={100}
+                      height={32}
+                      className="hidden dark:block h-7 w-auto object-contain"
+                    />
+                  </Link>
+
+                  <SheetClose
+                    render={
+                      <Button
+                        variant="ghost"
+                        size="icon-sm"
+                        aria-label="Close navigation menu"
+                        className="rounded-full"
+                      />
+                    }
+                  >
+                    <X className="h-5 w-5" />
+                    <span className="sr-only">Close</span>
+                  </SheetClose>
+                </div>
+
+                {/* Accessible description & title for screen readers */}
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Mobile site navigation links
+                </SheetDescription>
 
                 <nav className="flex flex-col gap-1.5 py-6 flex-1">
                   {navLinks.map((link) => (

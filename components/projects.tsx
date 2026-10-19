@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/carousel"
 import type { Project } from "@/types/project"
 import { projects as defaultProjects } from "@/data/projects"
+import { contactData } from "@/data/contact"
 
 export type { Project }
 export { defaultProjects }
@@ -70,7 +71,7 @@ export function Projects({ projects = defaultProjects }: ProjectsProps) {
           </div>
 
           <a
-            href="https://github.com"
+            href={contactData.githubUrl}
             target="_blank"
             rel="noreferrer"
             className="text-xs sm:text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 group"

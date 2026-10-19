@@ -19,7 +19,7 @@ export const aboutData: AboutData = {
   education: {
     period: "2024 — Present",
     institution: "University",
-    field: "Computer Science",
+    field: "Information Techn0logy",
     level: "Currently Level 3",
   },
   interests: [
