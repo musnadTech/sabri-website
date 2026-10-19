@@ -35,8 +35,8 @@ export function Footer() {
               className="hidden dark:block object-contain"
             />
           </Link>
-          <span className="text-xs text-muted-foreground">
-            © 2025 All rights reserved.
+          <span className="text-xs text-muted-foreground" suppressHydrationWarning>
+            © {new Date().getFullYear()} All rights reserved.
           </span>
         </div>
 
