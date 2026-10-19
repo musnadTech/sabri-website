@@ -156,9 +156,9 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right Illustration */}lg:max-w-125
+          {/* Right Illustration */}
           <div className="md:col-span-5 lg:col-span-6 relative flex items-center justify-center lg:justify-end">
-            <div className="relative w-full max-w-110 lg:max-w-125 xl:max-w-135 aspect-square">
+            <div className="relative w-full max-w-[440px] lg:max-w-[500px] xl:max-w-[540px] aspect-square">
               <Image
                 src={heroData.image}
                 alt="Sabri Alshibani - Developer Illustration"
