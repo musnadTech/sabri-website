@@ -10,6 +10,12 @@ import { Button } from "@/components/ui/button"
 import { navLinks as footerLinks } from "@/data/navigation"
 
 export function Footer() {
+  const [currentYear, setCurrentYear] = React.useState<number | null>(null)
+
+  React.useEffect(() => {
+    setCurrentYear(new Date().getFullYear())
+  }, [])
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
@@ -36,9 +42,10 @@ export function Footer() {
             />
           </Link>
           <span className="text-xs text-muted-foreground" suppressHydrationWarning>
-            © {new Date().getFullYear()} All rights reserved.
+            © {currentYear ?? 2026} All rights reserved.
           </span>
         </div>
+
 
         {/* Links and Scroll-to-top */}
         <div className="flex items-center gap-6">

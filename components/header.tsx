@@ -20,6 +20,11 @@ import { navLinks } from "@/data/navigation"
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
+  const [currentYear, setCurrentYear] = React.useState<number | null>(null);
+
+  React.useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
@@ -130,8 +135,9 @@ export default function Header() {
                 </nav>
 
                 <div className="border-t pt-4 text-xs text-muted-foreground" suppressHydrationWarning>
-                  © {new Date().getFullYear()} All rights reserved.
+                  © {currentYear ?? 2026} All rights reserved.
                 </div>
+
               </SheetContent>
             </Sheet>
           </div>

@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero"
 import { Technologies } from "@/components/technologies"
 import { Projects } from "@/components/projects"
+import { Articles } from "@/components/articles"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
 import { Container } from "@/components/container"
@@ -27,6 +28,12 @@ export default function Home() {
         <Separator className="opacity-50" />
       </Container>
 
+      <Articles />
+
+      <Container>
+        <Separator className="opacity-50" />
+      </Container>
+
       <About />
 
       <Container>
@@ -37,3 +44,4 @@ export default function Home() {
     </div>
   )
 }
+

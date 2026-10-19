@@ -4,4 +4,6 @@ export * from "./contact"
 export * from "./about"
 export * from "./hero"
 export * from "./navigation"
+export * from "./article"
+
 
